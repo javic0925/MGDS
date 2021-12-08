@@ -2,8 +2,8 @@
     "name": "Mega Descarga De Sabor",
     "short_name": "MGDS",
     "start_url": "/",
-    "background_color": "#543560",
-    "theme_color": "#543560",
+    "background_color": "#000000",
+    "theme_color": "#000000",
     "icons": [
         {
             "src": "./Assets/Icons/IR512.png",
