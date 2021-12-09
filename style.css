@@ -7,6 +7,12 @@
   background-color: #202020;
 }
 
+.mainHead {
+  height: 7vh;
+  width: 100vw;
+  background-color: #5c75cd;
+}
+
 .header {
   height: 35vh;
   width: 100vw;
@@ -24,14 +30,26 @@
           align-items: center;
 }
 
-.cover {
-  width: 19rem;
-  height: 20rem;
+.header img {
+  height: 95%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.cover img {
-  height: 100%;
-  width: 100%;
+/* width */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5c75cd;
 }
 
 #soundtracks {
@@ -53,8 +71,9 @@
 }
 
 .cont {
-  height: 45vh;
+  height: 40vh;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .sticky {
@@ -91,29 +110,38 @@ table.GeneratedTable thead {
   background-color: #242424;
 }
 
-#number {
-  width: 8%;
-}
-
-.coverImage {
-  width: 15%;
-}
-
-.coverImage img {
-  height: 100%;
+tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 0.3rem;
 }
 
-.title {
-  width: 69%;
-  padding-left: 0.5rem;
-  text-align: left;
+td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2e2e2e;
 }
 
-#more {
-  width: 8%;
+#number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +151,39 @@ table.GeneratedTable thead {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 8%;
+}
+
+.coverImage {
+  width: 15%;
+}
+
+.coverImage img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  width: 60%;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+#more {
+  width: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #2e2e2e;
 }
 
 #artist {
@@ -134,7 +195,7 @@ td img {
 }
 
 .plyr {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,5 +229,20 @@ td img {
 .plyr--full-ui input[type="range"] {
   color: #0099ff;
   color: var(--plyr-range-fill-background, var(--plyr-color-main, var(--plyr-color-main, #0099ff)));
+}
+
+span[id^="heart"] {
+  font-size: 1.3rem;
+  width: 100%;
+  color: #cecece;
+  background-color: #2e2e2e;
+}
+
+span[id^="heart"] i {
+  background-color: #2e2e2e;
+}
+
+span[id^="heart"].liked {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

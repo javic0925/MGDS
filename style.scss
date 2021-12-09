@@ -6,6 +6,12 @@
   background-color: #202020;
 }
 
+.mainHead {
+  height: 7vh;
+  width: 100vw;
+  background-color: #5c75cd;
+}
+
 .header {
   height: 35vh;
   width: 100vw;
@@ -18,15 +24,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    height: 95%;
+    width: auto;
+    object-fit: cover;
+  }
 }
 
-.cover {
-  width: 19rem;
-  height: 20rem;
-  img {
-    height: 100%;
-    width: 100%;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(92, 117, 205, 1);
 }
 
 #soundtracks {
@@ -40,8 +58,9 @@
   padding-left: 1rem;
 }
 .cont {
-  height: 45vh;
+  height: 40vh;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .sticky {
@@ -62,7 +81,7 @@ table.GeneratedTable {
   border-width: 0rem;
   border-color: #ffcc00;
   border-style: solid;
-  color: rgb(206, 206, 206);
+  color: #cecece;
 }
 
 table.GeneratedTable td,
@@ -78,7 +97,26 @@ table.GeneratedTable thead {
   background-color: #242424;
 }
 
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+td {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+}
+
 #number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 8%;
 }
 
@@ -86,22 +124,24 @@ table.GeneratedTable thead {
   width: 15%;
   img {
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
   }
 }
 
 .title {
-  width: 69%;
+  width: 60%;
   padding-left: 0.5rem;
   text-align: left;
 }
 
 #more {
-  width: 8%;
+  width: 17%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
 }
 
 #artist {
@@ -112,7 +152,7 @@ td img {
 }
 
 .plyr {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -147,4 +187,18 @@ td img {
     --plyr-range-fill-background,
     var(--plyr-color-main, var(--plyr-color-main, #0099ff))
   );
+}
+
+span[id^="heart"] {
+  font-size: 1.3rem;
+  width: 100%;
+  color: #cecece;
+  background-color: rgb(46, 46, 46);
+  i {
+    background-color: rgb(46, 46, 46);
+  }
+}
+
+span[id^="heart"].liked {
+  color: red;
 }

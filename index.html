@@ -23,9 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     <link rel="manifest" href="manifest.json">
-
-    <link rel="stylesheet" href="style.css">
     <script src="./audius.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     
     <script>
         if ('serviceWorker' in navigator) {
@@ -38,8 +39,11 @@
 </head>
 
 <body>
+    <div class="mainHead">
+        <p><a href="https://radio.impacrecords.com"></a></p>
+    </div>
     <div class="header">
-        <div class="cover"><img src="./Assets/Covers/mainCover.jpg" alt=""></div>
+        <img src="./Assets/Covers/mainCover.jpg" alt="">
        
       </div>
       
@@ -49,10 +53,6 @@
       </div>
       <div class="cont">
         <table class="GeneratedTable">
-            <col class="column-one">
-            <col class="column-two">
-            <col class="column-three">
-            <col class="column-four">
             <thead>
                 
                 </thead>
@@ -67,15 +67,16 @@
         
     </audio>
     
-    <!-- your content here... -->
+    
     <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
     <script>
         const player = new Plyr('#my-audio', {
-            controls: ['play', 'progress', 'airplay', 'volume' ],
+            controls: ['play', 'current-time', 'progress', 'airplay', 'settings', 'mute', 'volume'  ],
         
         });
       </script>
     <script src="script.js"></script>
+    <script src="likes.js"></script>
 </body>
 
 </html>
