@@ -95,18 +95,18 @@ table.GeneratedTable thead {
   width: 8%;
 }
 
-#coverImage {
+.coverImage {
   width: 15%;
 }
 
-#coverImage img {
+.coverImage img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#title {
+.title {
   width: 69%;
   padding-left: 0.5rem;
   text-align: left;
