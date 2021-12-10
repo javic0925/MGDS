@@ -20,7 +20,7 @@ fetch('https://discoveryprovider.audius6.prod-us-west-2.staked.cloud/v1/playlist
     const data = await response.json()
     const items = data.data
     const table = document.querySelector('tbody');
-    var i = 1
+    var i = 0
   
     items.forEach(items =>  {
       
@@ -29,10 +29,10 @@ fetch('https://discoveryprovider.audius6.prod-us-west-2.staked.cloud/v1/playlist
       
       row.innerHTML = 
       `
-      <td id="number">${items.valueOf.length = i++}</td>
+      <td id="number">${i = ++i}</td>
       <td class="coverImage" onclick="togglePlay('https://discoveryprovider.audius.co/v1/tracks/${items.id}/stream?app_name=MGDS17');"><img src="${items.artwork["150x150"]}" alt=""></td>
       <td class="title" style="text-align:left;" onclick="togglePlay('https://discoveryprovider.audius.co/v1/tracks/${items.id}/stream?app_name=MGDS17');">${items.title}</td>
-      <td id="more"><span id=${"heart-"+ i++}><i class="fas fa-heart"></i></span></td>
+      <td id="more"><span id=${"heart-"+ i}><i class="fas fa-heart"></i></span></td>
       
       `;
 
