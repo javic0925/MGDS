@@ -47,6 +47,24 @@
   background: rgba(92, 117, 205, 1);
 }
 
+/* Style buttons */
+.btn {
+  position: absolute;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+  a {
+    color: white;
+  }
+}
+
+/* Darker background on mouse-over */
+
 #soundtracks {
   width: 100vw;
   height: 10vh;
@@ -56,6 +74,7 @@
   justify-content: center;
   color: #ffffff;
   padding-left: 1rem;
+  position: relative;
 }
 .cont {
   height: 40vh;
