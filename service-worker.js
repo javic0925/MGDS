@@ -1,8 +1,8 @@
 var CACHE_NAME = 'my-site-cache-v10';
 var urlsToCache = [
-  '.audius.js',
-  '.likes.js',
-  '.script.js'
+  './audius.js',
+  './likes.js',
+  './script.js'
 ];
 
 self.addEventListener('install', function(event) {
